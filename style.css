@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;  
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+body {
+    font-family: Outfit;
+    font-size: 18px;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: hsl(216, 50%, 16%);
+    max-width: 350px;
+    width: 330px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 27px 5px 20px #0c1727, 
+    1px 25px 19px 30px hsl(216, 54%, 16%);  
+}
+
+
+.card-top {
+    position: relative;
+}
+.card-top img {
+    border-radius: 10px;
+}
+.card-top .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0);
+    border-radius: 10px;
+    transition: 1.5s ease-in-out;
+}
+.card-top .overlay:hover {
+    cursor: pointer;
+    background-color: hsl(178, 100%, 50%, 0.7);
+}
+.icon {
+    display: none;
+}
+.card-top .overlay .icon {
+    font-size: 1rem;
+    width: 20%;
+    height: 20%;
+    transform: translate(-50%, -50%);
+}
+.card-top .overlay:hover .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    text-align: center;
+    transition: 1.5s ease-in;
+}
+
+
+.title {
+    color: hsl(0, 0%, 100%);
+    padding: 20px 0;
+    font-weight: 600; 
+    font-size: 1.3rem; 
+}
+.title:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.description {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+
+.deva {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.deva span {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+.eth {
+    color: hsl(178, 100%, 50%);
+}
+.time {
+    color: hsl(215, 51%, 70%);
+}
+
+
+.line {
+    height: 1px; 
+    background: hsl(215, 32%, 27%);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.avatar {
+    display: flex;
+    align-items: center;
+}
+.avatar img {
+    width: 13%;
+    border-radius: 50%;
+    border: 1.5px solid white;
+    margin-right: 1.2rem;
+}
+.avatar p {
+    color: hsl(215, 51%, 70%);
+}
+.avatar span {
+    color: hsl(0, 0%, 100%);
+}
+.avatar span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: inherit; 
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+ @media screen and (max-width: 375px) {
+    .container {
+        min-width: 260px;
+    }
+    
+ }
